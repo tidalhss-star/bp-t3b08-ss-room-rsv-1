@@ -7,10 +7,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: Yeti
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-Sitemap: https://t3b08-ss-room-rsv-1.pages.dev/sitemap.xml
+Sitemap: https://sangsu-room-trend.namanavi.com/sitemap.xml

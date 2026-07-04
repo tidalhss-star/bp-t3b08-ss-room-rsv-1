@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상수 룸싸롱 예약 | 정보</title>
+    <meta name="description" content="상수 룸싸롱 예약, 당신의 밤을 바꿀 선택. 010-6279-0862로 지금 바로 단독 예약하세요. 상수에서 가장 완벽한 프라이빗 룸, 오직 당신을 위해.">
+    <meta name="keywords" content="상수 룸싸롱, 상수 룸싸롱 예약, 상수 술집, 상수 프라이빗, 상수 유흥, 룸싸롱 예약, 010-6279-0862">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://t3b08-ss-room-rsv-1.vercel.app/info">
+    <meta property="og:title" content="상수 룸싸롱 예약 | 최고의 프라이빗 공간">
+    <meta property="og:description" content="상수 룸싸롱 예약, 당신의 밤을 바꿀 선택. 010-6279-0862로 지금 바로 단독 예약하세요.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+            background: #0a0a0f;
+            color: #e8e6e3;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.2rem;
+            border-left: 4px solid #c9a84c;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+            color: #b0aea8;
+        }
+        .dropcap::first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            margin-right: 0.6rem;
+            color: #c9a84c;
+            line-height: 1;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header {
+            background: rgba(10, 10, 15, 0.95);
+            padding: 1.2rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #c9a84c;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #b0aea8;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s;
+            letter-spacing: 0.05em;
+        }
+        nav a:hover {
+            color: #c9a84c;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: #c9a84c;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+        .hero {
+            padding: 8rem 0 4rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(201, 168, 76, 0.08) 0%, transparent 100%);
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            nav a {
+                display: none;
+            }
+            nav a.active-mobile {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 15, 0.98);
+                padding: 1.5rem;
+                text-align: center;
+                margin-left: 0;
+                border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        .tel-link {
+            color: #c9a84c;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+            transition: all 0.3s;
+        }
+        .tel-link:hover {
+            color: #dfc06a;
+            border-bottom-color: #c9a84c;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(201, 168, 76, 0.15);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+        .info-card:hover {
+            border-color: rgba(201, 168, 76, 0.4);
+            transform: translateY(-4px);
+        }
+        .info-card h3 {
+            color: #c9a84c;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .info-card p {
+            font-size: 0.95rem;
+        }
+        .faq-section {
+            margin: 4rem 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 1.5rem 0;
+        }
+        .faq-item h4 {
+            font-size: 1.1rem;
+            color: #e8e6e3;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+        .faq-item p {
+            font-size: 0.95rem;
+            color: #8a8882;
+            margin-bottom: 0;
+        }
+        .cta-block {
+            background: linear-gradient(135deg, rgba(201, 168, 76, 0.1), transparent);
+            border: 1px solid rgba(201, 168, 76, 0.2);
+            border-radius: 16px;
+            padding: 3rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+        .cta-block h2 {
+            border-left: none;
+            padding-left: 0;
+        }
+        .cta-block .tel-link {
+            font-size: 1.8rem;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .cta-block {
+                padding: 2rem 1.5rem;
+            }
+            .cta-block .tel-link {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">상수룸</div>
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+                <button class="hamburger" onclick="document.querySelectorAll('nav a').forEach(a => a.classList.toggle('active-mobile'))">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>진짜를 원한다면<br>여기로 와라</h1>
+            <p class="dropcap">상수 룸싸롱 예약은 가짜들 사이에서 진짜를 찾는 게임이다. 우리는 그 게임에서 이겼다. 010-6279-0862, 이 번호가 네 선택의 끝이다.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>상수, 그곳의 진실</h2>
+        <p>상수는 그냥 동네가 아니다. 홍대의 연장선에서 살아남은 자들의 공간이다. 여기서 룸싸롱을 고른다는 건, 네 수준을 증명하는 행위다. 우리는 그 증명을 도와준다. 상수 룸싸롱 예약, 그게 전부다.</p>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>위치의 힘</h3>
+                <p>상수역 도보 3분. 홍대와 합정 사이, 가장 핫한 지점. 문 열면 바로 네 세상이 펼쳐진다. 다른 곳에서 시간 낭비하지 마라.</p>
+            </div>
+            <div class="info-card">
+                <h3>프라이빗의 재정의</h3>
+                <p>우리가 말하는 프라이빗은 그냥 문 닫는 게 아니다. 완전한 차단, 완전한 자유. 네가 원하는 대로, 네가 필요한 만큼. 상수 룸싸롱 예약은 그 약속이다.</p>
+            </div>
+            <div class="info-card">
+                <h3>서비스, 말이 필요해?</h3>
+                <p>캐주얼한 척 하는 서비스는 집에 가서 해라. 여기는 프로의 영역이다. 네가 원하는 타이밍, 네가 원하는 스타일. 010-6279-0862, 그게 시작이다.</p>
+            </div>
+            <div class="info-card">
+                <h3>가격, 그건 두 번째 이야기</h3>
+                <p>싼 게 비지떡이라는 말, 여기서도 통한다. 하지만 우리는 비싸기만 한 게 아니다. 그 가치를 네가 직접 확인해라. 예약은 번호 하나면 끝이다.</p>
+            </div>
+        </div>
+
+        <div class="cta-block">
+            <h2>지금 당장, 망설일 시간이 없다</h2>
+            <p>상수 룸싸롱 예약은 선택이 아니라 필수다. 네가 진짜를 원한다면, 이 번호를 눌러라. 다른 건 필요 없다.</p>
+            <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">24시간 예약 가능, 단독 룸 보장</p>
+        </div>
+
+        <div class="faq-section">
+            <h2>궁금하면 물어봐, 답은 정해져 있다</h2>
+            <div class="faq-item">
+                <h4>상수 룸싸롱 예약은 어떻게 해?</h4>
+                <p>전화 한 통이면 끝이다. 010-6279-0862로 바로 걸어라. 우리가 다 처리해준다. 네가 할 일은 오는 것뿐이다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>단독 룸이 진짜 가능해?</h4>
+                <p>당연하다. 우리가 보장한다. 네가 원하는 프라이빗, 그 이상을 준비했다. 다른 데서는 꿈도 꾸지 마라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>가격은 얼마야?</h4>
+                <p>전화로 물어봐라. 여기서 숫자만 던지면 싸구려로 보일 테니까. 우리는 가격보다 가치를 판다. 직접 확인해라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>상수 말고 다른 지역은?</h4>
+                <p>우리는 상수에 집중한다. 이 지역에서 최고가 목표니까. 다른 데 찾아다닐 시간에 여기로 와라. 후회는 없다.</p>
+            </div>
+            <div class="faq-item">
+                <h4>예약 취소나 변경은?</h4>
+                <p>전화로 얘기해라. 우리는 합리적이다. 하지만 노쇼는 용납 안 된다. 그건 매너의 문제니까. 상수 룸싸롱 예약은 약속이다.</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; padding: 3rem 0; color: #6a6863; font-size: 0.9rem; border-top: 1px solid rgba(255,255,255,0.05);">
+            상수 룸싸롱 예약 | 010-6279-0862 | 진짜를 원한다면, 여기로 와라.
+        </p>
+    </section>
+</body>
+</html>
