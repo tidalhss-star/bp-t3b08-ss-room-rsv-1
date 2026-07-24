@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img">
-  <metadata>BPaaS site identity 1b99b461a0729699</metadata>
-  <rect width="64" height="64" rx="8" fill="hsl(225 75% 40%)"/>
-  <path d="M32 0h32v64H18Z" fill="hsl(308 76% 60%)" opacity="0.82"/>
-  <g transform="rotate(82 32 32)" opacity="0.42"><path d="M12 34h40M32 12v40" stroke="#101418" stroke-width="8" stroke-linecap="round"/></g>
-  <text x="32" y="39" text-anchor="middle" fill="#101418" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="0">SR</text>
+  <title>상수 룸싸롱 예약</title>
+  <rect width="64" height="64" rx="11" fill="hsl(225 71% 20%)"/>
+  <path d="M64 0v26L38 0Z" fill="hsl(330 68% 64%)" opacity="0.16"/>
+  <g transform="rotate(180 32 32)"><path d="M12 44 26 24l10 12 6-8 8 16Z" fill="hsl(330 68% 64%)"/><path d="M12 44 26 24l10 12" fill="none" stroke="hsl(225 24% 96%)" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/></g>
 </svg>
